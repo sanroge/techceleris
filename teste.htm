@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Techceleris — Alavancagem de Investimentos com Consórcio</title>
+  <meta name="description" content="Descubra como alavancar seus investimentos de forma inteligente com consórcios. Techceleris: Potencializando seu patrimônio." />
+  <style>
+    :root{
+      --maxw:1000px;
+      --accent:#ff6600;
+      --accent2:#00b894;
+    }
+    *{box-sizing:border-box} 
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      color:#0b1730;
+      background:linear-gradient(180deg,#f0f8ff,#e6f7f1);
+    }
+    .wrap{max-width:var(--maxw);margin:40px auto;padding:24px}
+    header{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      padding-bottom:16px;
+    }
+    header img{height:48px}
+    header strong{
+      font-size:1.5rem;
+      color:var(--accent);
+      font-weight:700;
+    }
+    .hero{
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+      padding:48px;
+      background:white;
+      border-radius:12px;
+      box-shadow:0 6px 20px rgba(11,23,48,.1);
+      border-left:8px solid var(--accent);
+    }
+    h1{
+      margin:0;
+      font-size:clamp(1.8rem,3vw,2.4rem);
+      color:var(--accent);
+    }
+    p.lead{
+      margin:0;
+      color:#334155;
+      font-size:1.1rem;
+    }
+    .cta{
+      display:inline-block;
+      margin-top:8px;
+      padding:14px 22px;
+      border-radius:10px;
+      background:linear-gradient(90deg,var(--accent),#ff8533);
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+      transition:transform .2s;
+    }
+    .cta:hover{
+      transform:scale(1.05);
+    }
+    .features{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:12px;
+      margin-top:18px
+    }
+    .card{
+      background:#fff;
+      padding:14px;
+      border-radius:10px;
+      border:1px solid rgba(11,23,48,.05);
+      box-shadow:0 3px 10px rgba(0,0,0,0.05);
+    }
+    .card strong{
+      color:var(--accent2);
+      font-size:1.1rem;
+    }
+    footer{
+      margin-top:18px;
+      color:#667085;
+      font-size:.9rem;
+      text-align:center
+    }
+    form label{display:block;margin:8px 0;font-size:.95rem}
+    input,textarea{
+      width:100%;
+      padding:8px;
+      border:1px solid #d1d5db;
+      border-radius:8px;
+    }
+    /* Botão flutuante do WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+      transition: transform 0.2s;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.05);
+    }
+    .whatsapp-float img {
+      width: 35px;
+      height: 35px;
+    }
+    @media (min-width:900px){
+      .hero{flex-direction:row;align-items:center;justify-content:space-between}
+      .hero-left{flex:1;padding-right:24px}
+      .hero-right{width:360px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="logo.png" alt="Logo Techceleris" onerror="this.style.display='none'"/>
+      <strong>Techceleris</strong>
+    </header>
+
+    <section class="hero" aria-labelledby="titulo">
+      <div class="hero-left">
+        <h1 id="titulo">Alavanque seus Investimentos com Consórcios Inteligentes</h1>
+        <p class="lead">A Techceleris mostra como transformar consórcios em uma poderosa ferramenta para acelerar a construção do seu patrimônio.</p>
+        <a class="cta" href="#faleconosco">Quero saber mais</a>
+
+        <div class="features" style="margin-top:18px">
+          <div class="card"><strong>Estratégico</strong><div>Planejamento sob medida para seu perfil</div></div>
+          <div class="card"><strong>Rentável</strong><div>Potencialize ganhos e reduza riscos</div></div>
+          <div class="card"><strong>Seguro</strong><div>Atuação transparente e sólida</div></div>
+        </div>
+      </div>
+
+      <div class="hero-right" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80" alt="Pessoa apresentando um consórcio" style="width:100%;border-radius:8px" />
+      </div>
+    </section>
+
+    <section id="faleconosco" style="margin-top:32px;background:white;padding:32px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.05)">
+      <h3 style="color:var(--accent)">Fale Conosco</h3>
+      <p>Preencha o formulário ou fale diretamente pelo WhatsApp para saber como a Techceleris pode ajudar você a investir de forma inteligente.</p>
+      
+      <!-- Botão de WhatsApp dentro da seção -->
+      <a href="https://wa.me/5511932028027?text=Ol%C3%A1%2C%20tenho%20interesse%20na%20solu%C3%A7%C3%A3o%20de%20cons%C3%B3rcios%20da%20Techceleris." target="_blank" style="display:inline-flex;align-items:center;gap:8px;background-color:#25d366;color:white;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:bold;margin-bottom:15px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:20px;height:20px;">
+        Falar no WhatsApp
+      </a>
+
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p style="display:none"><label>Se você é humano, deixe em branco: <input name="bot-field"></label></p>
+        <label>Seu nome <input type="text" name="name" required></label>
+        <label>Seu telefone <input type="tel" name="phone" required></label>
+        <label>Seu e-mail <input type="email" name="email" required></label>
+        <label>Mensagem <textarea name="message" rows="4"></textarea></label>
+        <button type="submit" class="cta" style="border:none;margin-top:8px">Enviar</button>
+      </form>
+    </section>
+
+    <footer>© <span id="ano"></span> Techceleris • Alavancagem de Investimentos com Consórcio</footer>
+  </div>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a href="https://wa.me/5511932028027?text=Ol%C3%A1%2C%20tenho%20interesse%20na%20solu%C3%A7%C3%A3o%20de%20cons%C3%B3rcios%20da%20Techceleris." target="_blank" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+
+  <script>document.getElementById('ano').textContent=new Date().getFullYear()</script>
+</body>
+</html>
